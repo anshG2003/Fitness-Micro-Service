@@ -51,18 +51,18 @@ The system consists of the following components:
 
 ### 1. Clone the Repository
 
-git clone [https://github.com/anshG2003/Fitness-Micro-Service.git](https://github.com/anshG2003/Fitness-Micro-Service.git)
-cd Fitness-Micro-Service
+``git clone [https://github.com/anshG2003/Fitness-Micro-Service.git](https://github.com/anshG2003/Fitness-Micro-Service.git)``
+``cd Fitness-Micro-Service``
 
 ### 2. Set Up Infrastructure
 Run RabbitMQ and Keycloak using Docker:
-docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+``docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management``
 
 ### 3. Configuration
 Update the application.yml in the AI Service with your Gemini API Key:
-gemini:
+``gemini:
   api:
-    key: YOUR_GEMINI_API_KEY_HERE
+    key: YOUR_GEMINI_API_KEY_HERE``
 
 ### 4. Running the Services
 
@@ -71,11 +71,11 @@ Start the services in the following order:
 Config Server
 Eureka Server
 User/Activity/AI Services
-Frontend:
+Frontend
 
-cd fitness-app-frontend
+``cd fitness-app-frontend
 npm install
-npm start
+npm start``
 
 ### 📝 License
 This project is licensed under the MIT License - see the LICENSE file for details.
