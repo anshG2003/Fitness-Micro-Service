@@ -1,0 +1,24 @@
+debug: true
+server:
+  port: 8082
+
+spring:
+  application:
+    name: activity-service
+  cloud:
+    config:
+      enabled: true
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/fitnessactivity
+      database: fitnessactivity
+  config:
+    import: "optional:configserver:http://localhost:8888"
+
+rabbitmq:
+  queue:
+    name: queue
+  exchange:
+    name: exchange
+  routing:
+    key: routingKey
