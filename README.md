@@ -33,7 +33,7 @@ The system consists of the following components:
 
 - **Backend:** Java 17+, Spring Boot 3.x, Spring Cloud
 - **Frontend:** React, TypeScript, CSS3
-- **Database:** PostgreSQL / MySQL (per service)
+- **Database:** PostgreSQL / MongoDB
 - **Messaging:** RabbitMQ
 - **IAM:** Keycloak
 - **AI Integration:** Google Gemini API
